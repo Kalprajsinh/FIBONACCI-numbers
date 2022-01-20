@@ -1,0 +1,23 @@
+#include <stdio.h>
+ 
+void main()
+{
+    int a=0, b=1,z,x, i= 0;
+ 
+    printf("Enter number of series terms \n");
+    scanf("%d", &x);
+    printf("First %d FIBONACCI numbers are ...\n", x);
+    printf("\n%d, %d, ", a,b);
+    i = 2;
+    
+    while (i< x)
+    {
+        z = a + b;
+        i++;
+        printf("%d, ",z);
+        a = b;
+        b = z;
+   }
+printf("......\n");
+}
+
